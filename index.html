@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>微商城</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    window.clientWidth = docEl.clientWidth;
+                    if (!window.clientWidth) return;
+                    docEl.style.fontSize = 20 * (window.clientWidth / 320) + 'px';
+                    window.base = 20 * (window.clientWidth / 320);
+                };
+
+        try {
+            recalc();
+        } catch (e) {
+
+        }
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper3.07.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="dist/dropload.css">
+</head>
+<body>
+    <header class="clearfix">
+        <!-- <h1 class="logo fl">
+            <a href="index.html">
+                <img src="img/logo.png" alt="" />
+            </a>
+        </h1>
+        <div class="seat fl">
+            <em></em>
+            <span>浙江</span>
+        </div>
+        <div class="loginbox fr">
+            <a href="login.html">登录</a>
+            |
+            <a href="register.html">注册</a>
+        </div> -->
+    </header>
+    <main class="main">
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner2.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/banner4.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/banner3.jpg" alt="" /></div>
+                <div class="swiper-slide"><img src="img/banner4.jpg" alt="" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <ul class="icons clearfix">
+            <li class="icon fl">
+                <a href="#">
+                    <img src="img/ico1.png" alt="" />
+                    <span>生日蛋糕</span>
+                </a>
+            </li>
+            <li class="icon fl">
+                <a href="#">
+                    <img src="img/ico2.png" alt="" />
+                    <span>生日蛋糕</span>
+                </a>
+            </li>
+            <li class="icon fl">
+                <a href="#">
+                    <img src="img/ico3.png" alt="" />
+                    <span>生日蛋糕</span>
+                </a>
+            </li>
+            <li class="icon fl">
+                <a href="#">
+                    <img src="img/ico4.png" alt="" />
+                    <span>生日蛋糕</span>
+                </a>
+            </li>
+        </ul>
+        <section class="gold-area">
+            <div class="col-1 fl">
+                <a href="#"><img src="img/11.jpeg" alt="" /></a>
+            </div>
+            <div class="col-2 fl clearfix">
+                <div class="col-2-row-1 fl">
+                    <a href="#"><img src="img/12.jpg" alt="" /></a>
+                </div>
+                <div class="col-2-row-2 fl">
+                    <div class="col-2-row-2-col fl">
+                        <a href="#"><img src="img/21.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-2-row-2-col fl">
+                        <a href="#"><img src="img/22.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hot-wrapper">
+            <h3 class="hot-title">人气商品</h3>
+            <ul class="hot-content clearfix">
+                <li class="product fl">
+                    <div class="img-wrap">
+                        <img src="img/p2.jpg" alt="" />
+                    </div>
+                    <p class="title">【EXO鹿晗同款情侣鞋】韩版纯色低帮系带小白鞋帆布鞋 </p>
+                    <p class="price">￥52.50</p>
+                </li>
+                <li class="product fl">
+                    <div class="img-wrap">
+                        <img src="img/p1.jpg" alt="" />
+                    </div>
+                    <p class="title">【EXO鹿晗同款情侣鞋】韩版纯色低帮系带小白鞋帆布鞋 </p>
+                    <p class="price">￥52.50</p>
+                </li>
+                <li class="product fl">
+                    <div class="img-wrap">
+                        <img src="img/p3.jpg" alt="" />
+                    </div>
+                    <p class="title">【EXO鹿晗同款情侣鞋】韩版纯色低帮系带小白鞋帆布鞋 </p>
+                    <p class="price">￥52.50</p>
+                </li>
+                <li class="product fl">
+                    <div class="img-wrap">
+                        <img src="img/p4.jpg" alt="" />
+                    </div>
+                    <p class="title">【EXO鹿晗同款情侣鞋】韩版纯色低帮系带小白鞋帆布鞋 </p>
+                    <p class="price">￥52.50</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="float-car">
+        <span>2</span>
+        <img src="img/car0.png" alt="" />
+    </div>
+    <footer class="clearfix">
+        <!-- <a href="#" class="i_item fl active">
+            <span class="i_icon"></span>
+            <span class="i_txt">首页</span>
+        </a>
+        <a href="selectshop.html" class="i_item fl">
+            <span class="i_icon"></span>
+            <span class="i_txt">分类</span>
+        </a>
+        <a href="shopcar.html" class="i_item fl">
+            <span class="i_icon"></span>
+            <span class="i_txt">购物车</span>
+        </a>
+        <a href="#" class="i_item fl">
+            <span class="i_icon"></span>
+            <span class="i_txt">我的</span>
+        </a> -->
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/footer.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/swiper3.07.min.js"></script>
+<script type="text/javascript" src="dist/dropload.min.js"></script>
+
+<script>
+$(function(){
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      pagination: '.swiper-pagination',
+      autoplay : 3000,
+     });
+    $('.i_item').click(function(){
+        var i = $(this).index();
+       $('.i_item').removeClass('active').eq(i).addClass('active');
+   });
+    $('.product').on('click',function(){
+        window.location.href = 'detail.html';
+    });
+    // dropload
+    $('.hot-wrapper').dropload({
+        scrollArea : window,
+        loadDownFn : function(me){
+            var newProduct = '<li class="product fl">'+
+                                '<div class="img-wrap">'+
+                                    '<img src="img/p3.jpg" alt="" />'+
+                                '</div>'+
+                                '<p class="title">【EXO鹿晗同款情侣鞋】韩版纯色低帮系带小白鞋帆布鞋 </p>'+
+                                '<p class="price">￥52.50</p>'+
+                            '</li>'
+            setTimeout(function(){
+                for (var i = 0; i < 2; i++) {
+                    $('.hot-content').append(newProduct);
+                }
+                // 每次数据加载完，必须重置
+                me.resetload();
+            },1000);
+        }
+    });
+})
+
+</script>
+</html>
